@@ -8,5 +8,6 @@ contract BasicIterator {
 
     function BasicIterator() {
         creator = msg.sender; //sets the creator address 
+        uint8 x = 0; //initializes an 8-bit unsigned integer 'x' to zero
     }
 }
