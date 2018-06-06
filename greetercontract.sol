@@ -18,4 +18,9 @@ contract Greeter {
     function greet() constant returns (string) {
         return greeting;
     }
+
+    //demonstration of a return of a global variable, doesnt actually have anything to do with the greet functionality
+    function getBlockNumber() constant returns (uint) {
+        return block.number //gives back the mined block number
+    }
 }
