@@ -11,6 +11,7 @@ contract Greeter {
 
     //this is the constructor (same name as contract) --> takes a string and saves it TO the 'greeting' string variable
     function Greeter (string _greeting) public {
-
+        creator = msg.sender; //whoever is the sender is assigned as the 'creator'
+        greeting = _greeting;
     }
 }
