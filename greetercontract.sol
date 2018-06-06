@@ -23,4 +23,9 @@ contract Greeter {
     function getBlockNumber() constant returns (uint) {
         return block.number //gives back the mined block number
     }
+
+    //this new function requires a string carrying the _newgreeting modifier
+    function setGreeting(string _newgreeting) {
+        greeting = _newgreeting;
+    }
 }
