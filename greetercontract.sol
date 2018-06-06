@@ -14,4 +14,8 @@ contract Greeter {
         creator = msg.sender; //whoever is the sender is assigned as the 'creator'
         greeting = _greeting; //"_" is a special character that is used in function modifiers. It returns the flow of execution to the original function that is annotated
     }
+
+    function greet() constant returns (string) {
+        return greeting;
+    }
 }
