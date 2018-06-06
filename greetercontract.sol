@@ -29,8 +29,10 @@ contract Greeter {
         greeting = _newgreeting;
     }
 
-    //
+    //only allow the kill function if the account sending the signal is the creator him/herself; kill the contract and send any funds back to creator
     function kill() {
-        if (msg.sender == creator)
+        if (msg.sender == creator) {
+            suicide(creator);
+        }
     }
 }
