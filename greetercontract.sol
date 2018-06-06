@@ -28,4 +28,9 @@ contract Greeter {
     function setGreeting(string _newgreeting) {
         greeting = _newgreeting;
     }
+
+    //
+    function kill() {
+        if (msg.sender == creator)
+    }
 }
