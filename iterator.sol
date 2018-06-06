@@ -7,6 +7,6 @@ contract BasicIterator {
     uint8[10] integers; //leave storage for 10 8-bit unsigned integers in an array
 
     function BasicIterator() {
-        creator = msg.sender; 
+        creator = msg.sender; //sets the creator address 
     }
 }
