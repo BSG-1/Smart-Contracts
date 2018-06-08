@@ -19,5 +19,8 @@ contract BasicIterator {
     }
 
     //initialize a return of the total to the reader/user
+    //this function always uses a uint (which is exactly 256 bits)
+    function getSum() constant returns (uint) {
 
+    }
 }
