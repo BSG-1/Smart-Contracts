@@ -18,6 +18,6 @@ contract BasicIterator {
         }
     }
 
-    //
+    //initialize a return of the total to the reader/user
 
 }
