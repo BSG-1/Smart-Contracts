@@ -21,6 +21,12 @@ contract BasicIterator {
     //initialize a return of the total to the reader/user
     //this function always uses a uint (which is exactly 256 bits)
     function getSum() constant returns (uint) {
-
+        uint8 sum = 0;
+        uint8 x = 0;
+        //iterates over integers array and increases x by 1 every time; also sets the new sum variable to itself plus whatever number the integers variable has landed on that particular iteration 
+        while(x <integers.length){
+            sum = sum + integers[x];
+            x++;
+        }
     }
 }
