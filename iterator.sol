@@ -28,5 +28,7 @@ contract BasicIterator {
             sum = sum + integers[x];
             x++;
         }
+        //returns the sum variable
+        return sum;
     }
 }
