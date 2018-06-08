@@ -31,4 +31,6 @@ contract BasicIterator {
         //returns the sum variable
         return sum;
     }
+
+    //the kill function here will return/recover the funds
 }
