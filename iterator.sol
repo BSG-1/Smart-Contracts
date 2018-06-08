@@ -32,5 +32,10 @@ contract BasicIterator {
         return sum;
     }
 
-    //the kill function here will return/recover the funds
+    //the kill function here will return/recover the funds back to the creator
+    function kill(){
+        if (msg.sender == creator){
+            suicide(creator);
+        }
+    }
 }
