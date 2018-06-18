@@ -12,7 +12,8 @@ contract FuncConcert {
         tickets = 5;
     }
 
+    //"payable" here makes sure that the contract is able to receive ether
     function buyTickets(uint amount) payable {
-        
+
     }
 }
