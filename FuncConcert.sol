@@ -14,6 +14,10 @@ contract FuncConcert {
 
     //"payable" here makes sure that the contract is able to receive ether
     function buyTickets(uint amount) payable {
+        if (msg.value != (amount * price) || amount > tickets){
+            throw;
+        }
 
+        purchasers[msg.sender] += amount;
     }
 }
