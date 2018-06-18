@@ -11,4 +11,8 @@ contract FuncConcert {
         owner = msg.sender;
         tickets = 5;
     }
+
+    function buyTickets(uint amount) payable {
+        
+    }
 }
