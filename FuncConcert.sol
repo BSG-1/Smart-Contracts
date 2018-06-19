@@ -19,5 +19,6 @@ contract FuncConcert {
         }
 
         purchasers[msg.sender] += amount;
+        tickets -= amount;
     }
 }
